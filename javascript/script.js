@@ -19,10 +19,13 @@ function main(ctime)
 {
     window.requestAnimationFrame(main);
     console.log(ctime);
-    if ((ctime - lastPaintTime)/1000 < 1/speed);
+    if ((ctime - lastPaintTime)/1000 < 1/speed){
         return;
+
+    }
     lastPaintTime = ctime;
     gameEngine();
+
 
 }
 
@@ -31,12 +34,16 @@ function gameEngine(){
 
 
     //part2 : display the the location of the snake and its food
-    // board.
+     board.innerHTML = "";
+    snakearr.forEach((e, index)=> {
+        snakeElement = document.createElement('div');
+        snakeElement.style.gridRowStart = e.y;
+        snakeElement.style.gridColumnStart = e.x;
+        snakeElement.classList.add('food');
+        board.appendChild(snakeElement);
+    })
+
+
 }
-
-
-
-
-
 
 window.requestAnimationFrame(main);
