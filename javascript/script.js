@@ -31,7 +31,7 @@ function gameEngine(){
 
 
     //part2 : display the the location of the snake and its food
-    board.
+    // board.
 }
 
 
