@@ -5,7 +5,7 @@
 A classic Snake game implemented using JavaScript, HTML, and CSS. The snake grows longer as it eats the food, and the objective is to achieve the highest score without colliding with the walls or itself.
 
 ## Demo
-You can play the game live [here](https://your-snake-game-url.com).
+You can play the game live [here](https://pritam-awatade-snake-game.netlify.app/).
 
 ## Features
 - Simple and intuitive controls (arrow keys or WASD).
