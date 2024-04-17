@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.body{
-    background: url(/bg.jpg);
+.body {
+    background: url(/assets/bg.jpg);
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -14,23 +14,49 @@
 
 }
 
-.board{
-    background:linear-gradient(rgba(124, 202, 166, 0.593) , white);
+#board {
+    background: linear-gradient(rgba(124, 202, 166, 0.593), white);
     height: 90vmin;
     width: 90vmin;
     border: 2px solid black;
     display: grid;
-    grid-template-rows: repeat(18,1fr);
-    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
 
 }
 
-.head{
-    background-color: red;
+.head {
+    background: linear-gradient(yellow, red);
+    border: 2px solid black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 
 }
 
-.food{
-    background-color: yellow;
+.snake {
+    background-color: purple;
+    border: 2px solid black;
+    border-radius: 9px;
+}
 
+.food {
+    background: purple;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#scorebox {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#HIscorebox {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: 600;
 }
